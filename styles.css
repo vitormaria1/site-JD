@@ -760,6 +760,16 @@ a {
     padding-right: 20px;
   }
 
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .hero-copy,
+  .hero-visual {
+    width: 100%;
+  }
+
   .section:not(.hero) {
     margin-top: 22px;
     padding-top: 28px;
@@ -791,11 +801,11 @@ a {
   }
 
   .hero-logo-main {
-    width: min(100%, 520px);
+    width: min(100%, 380px);
   }
 
   .hero-logo-fade {
-    min-height: 270px;
+    min-height: 220px;
   }
 
   .hero-stats {
@@ -867,14 +877,40 @@ a {
 
   .maintenance-layout {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .callout {
     padding: 18px;
   }
 
+  .testimonial-grid {
+    gap: 12px;
+  }
+
+  .testimonial-card,
+  .faq-list details {
+    border-radius: 18px;
+  }
+
+  .faq-list details {
+    padding: 14px 16px;
+  }
+
+  .site-footer {
+    padding-top: 18px;
+  }
+
   .coverage-tags,
   .services-tags {
     gap: 8px;
+  }
+
+  .coverage-tags span,
+  .services-tags span,
+  .hero-benefits span {
+    width: auto;
+    padding: 9px 12px;
+    font-size: 0.92rem;
   }
 }
